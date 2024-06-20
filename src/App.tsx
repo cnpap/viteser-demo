@@ -1,19 +1,9 @@
-import {useEffect, useState} from 'react'
+import {useState} from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import {useMount} from "ahooks";
-
-async function runInServer(name: string) {
-  "use server"
-
-  /**
-   * use mysql、redis or any other server-side services
-   */
-  console.log(`Hello ${name}!`)
-
-  return `Hello ${name}!`
-}
+import {runInServer} from "./service.ts";
 
 function App() {
   const [title, setTitle] = useState('')
