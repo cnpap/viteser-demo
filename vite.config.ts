@@ -5,9 +5,7 @@ import { ViteserPlugin } from 'viteser'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
+    ViteserPlugin(),
     react(),
-    ViteserPlugin({
-      vitePort: 5173,
-      serverPort: 12000
-    })],
+  ],
 })

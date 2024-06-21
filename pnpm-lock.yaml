@@ -36,8 +36,8 @@ importers:
         specifier: ^4.15.3
         version: 4.15.3
       viteser:
-        specifier: ^0.0.1-beta.11
-        version: 0.0.1-beta.11(postcss@8.4.38)(typescript@5.4.5)
+        specifier: ^0.0.1-beta.12
+        version: 0.0.1-beta.12(postcss@8.4.38)(typescript@5.4.5)
       zod:
         specifier: ^3.23.8
         version: 3.23.8
@@ -488,6 +488,10 @@ packages:
 
   '@hapi/bourne@3.0.0':
     resolution: {integrity: sha512-Waj1cwPXJDucOib4a3bAISsKJVb15MKi9IvmTI/7ssVEm6sywXGjVJDhl6/umt1pK1ZS7PacXU3A1PmFKHEZ2w==}
+
+  '@hono/node-server@1.11.4':
+    resolution: {integrity: sha512-8TOiiiAqcFC6f62P7M9p6adQREAlWdVi1awehAwgWW+3R65/rKzHnLARO/Hu/466z01VNViBoogqatqXJMyItA==}
+    engines: {node: '>=18.14.1'}
 
   '@humanwhocodes/config-array@0.11.14':
     resolution: {integrity: sha512-3T8LkOmg45BV5FICb15QQMsyUSWrQ8AygVfC7ZG32zOalnqrilm018ZVCw0eapXux8FtA33q8PSRSstjee3jSg==}
@@ -1266,6 +1270,10 @@ packages:
     resolution: {integrity: sha512-QFLV0taWQOZtvIRIAdBChesmogZrtuXvVWsFHZTk2SU+anspqZ2vMnoLg7IE1+Uk16N19APic1BuF8bC8c2m5g==}
     engines: {node: '>=8'}
 
+  hono@4.4.7:
+    resolution: {integrity: sha512-WoQWFQyVFEVRtIzP5sHPv7nvIw+RYL/HRnvnOCDxj6A+BtrwuC9S0vryZbV4IyFcNgOJ87r/phDiC1x2eEo4Gg==}
+    engines: {node: '>=16.0.0'}
+
   http-assert@1.5.0:
     resolution: {integrity: sha512-uPpH7OKX4H25hBmU6G1jWNaqJGpTXxey+YOUizJUAgu0AjLUeC8D73hTrhvDS5D+GJN1DN1+hhc/eF/wpxtp0w==}
     engines: {node: '>= 0.8'}
@@ -2013,8 +2021,8 @@ packages:
       terser:
         optional: true
 
-  viteser@0.0.1-beta.11:
-    resolution: {integrity: sha512-RZsq5k2+4w1jBNYaksl0Cl1c8zFZtpEVNh8JdyDhaJExUl19KCLQTdfZHAJHwkfLTvvOfsiFWDG2ZZi/NFE9eg==}
+  viteser@0.0.1-beta.12:
+    resolution: {integrity: sha512-Yxdr7hLohEZeoavVlMnPaSqfAkuZseT2XNjkKgAXtGsN5msJI/AtEB/gg/+pXxixBFP20YJIUlnIEjA2p3ewOA==}
     engines: {node: '>=v14.21.3'}
 
   webidl-conversions@4.0.2:
@@ -2380,6 +2388,8 @@ snapshots:
   '@eslint/js@8.57.0': {}
 
   '@hapi/bourne@3.0.0': {}
+
+  '@hono/node-server@1.11.4': {}
 
   '@humanwhocodes/config-array@0.11.14':
     dependencies:
@@ -3265,6 +3275,8 @@ snapshots:
 
   hexoid@1.0.0: {}
 
+  hono@4.4.7: {}
+
   http-assert@1.5.0:
     dependencies:
       deep-equal: 1.0.1
@@ -3948,8 +3960,10 @@ snapshots:
       '@types/node': 20.14.2
       fsevents: 2.3.3
 
-  viteser@0.0.1-beta.11(postcss@8.4.38)(typescript@5.4.5):
+  viteser@0.0.1-beta.12(postcss@8.4.38)(typescript@5.4.5):
     dependencies:
+      '@hono/node-server': 1.11.4
+      hono: 4.4.7
       jsonwebtoken: 9.0.2
       tsup: 8.1.0(postcss@8.4.38)(typescript@5.4.5)
     transitivePeerDependencies:
